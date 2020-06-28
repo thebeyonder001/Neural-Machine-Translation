@@ -1,0 +1,724 @@
+model name  : model200_0.h5
+Model: "model_7"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_15 (InputLayer)           [(None, 9)]          0                                            
+__________________________________________________________________________________________________
+input_16 (InputLayer)           [(None, 14)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 9, 100)       851700      input_15[0][0]                   
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 14, 100)      1604300     input_16[0][0]                   
+__________________________________________________________________________________________________
+lstm_14 (LSTM)                  [(None, 200), (None, 240800      embedding_en[0][0]               
+__________________________________________________________________________________________________
+lstm_15 (LSTM)                  (None, 14, 200)      240800      embedding_es[0][0]               
+                                                                 lstm_14[0][1]                    
+                                                                 lstm_14[0][2]                    
+__________________________________________________________________________________________________
+dense_7 (Dense)                 (None, 14, 16043)    3224643     lstm_15[0][0]                    
+==================================================================================================
+Total params: 6,162,243
+Trainable params: 6,162,243
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+source: i guessed right      
+actual: acerte - - - - - - - - - - - - -
+predicted: lo adivine correctamente - - - - - - - - - - -
+source: i think hes a great writer   
+actual: pienso que es un gran escritor - - - - - - - -
+predicted: creo que es una gran escritor - - - - - - - -
+source: choose the one you like    
+actual: elige el que te guste - - - - - - - - -
+predicted: elige usted el que quiere - - - - - - - - -
+source: he knows how to tell lies   
+actual: el sabe decir mentiras - - - - - - - - - -
+predicted: el sabe como decir - - - - - - - - - -
+source: he flew a kite     
+actual: el elevo un volantin - - - - - - - - - -
+predicted: el atrapo un volantin - - - - - - - - - -
+source: i want tom to win    
+actual: quiero que tom gane - - - - - - - - - -
+predicted: quiero que tom ganara - - - - - - - - - -
+source: ill probably use it again    
+actual: probablemente lo voy a usar de nuevo - - - - - - -
+predicted: yo solia haber leido hace - - - - - - - - -
+source: you need to be there    
+actual: necesitas estar ahi - - - - - - - - - - -
+predicted: necesitas estar ahi - - - - - - - - - - -
+source: i found you      
+actual: ya te encontre - - - - - - - - - - -
+predicted: te encontre - - - - - - - - - - - -
+70
+0.2589602478147615 0.505556996077853 0.6365111252864258 0.7097714985746765
+0.09374999999999999 0.30618621784789724 0.4578787844531212 0.5533409598501607
+##################################################################################################
+model name  : model100_1.h5
+Model: "model_3"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_7 (InputLayer)            [(None, 9)]          0                                            
+__________________________________________________________________________________________________
+input_8 (InputLayer)            [(None, 14)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 9, 100)       851700      input_7[0][0]                    
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 14, 100)      1604300     input_8[0][0]                    
+__________________________________________________________________________________________________
+lstm_6 (LSTM)                   [(None, 100), (None, 80400       embedding_en[0][0]               
+__________________________________________________________________________________________________
+lstm_7 (LSTM)                   (None, 14, 100)      80400       embedding_es[0][0]               
+                                                                 lstm_6[0][1]                     
+                                                                 lstm_6[0][2]                     
+__________________________________________________________________________________________________
+dense_3 (Dense)                 (None, 14, 16043)    1620343     lstm_7[0][0]                     
+==================================================================================================
+Total params: 4,237,143
+Trainable params: 1,781,143
+Non-trainable params: 2,456,000
+__________________________________________________________________________________________________
+None
+source: i guessed right      
+actual: acerte - - - - - - - - - - - - -
+predicted: lo adivine correctamente - - - - - - - - - - -
+source: i think hes a great writer   
+actual: pienso que es un gran escritor - - - - - - - -
+predicted: yo pienso que ella es un gran escritor - - - - - -
+source: choose the one you like    
+actual: elige el que te guste - - - - - - - - -
+predicted: elige a ella con ella - - - - - - - - -
+source: he knows how to tell lies   
+actual: el sabe decir mentiras - - - - - - - - - -
+predicted: el sabe como pudo nadar - - - - - - - - -
+source: he flew a kite     
+actual: el elevo un volantin - - - - - - - - - -
+predicted: el elevo un minuto - - - - - - - - - -
+source: i want tom to win    
+actual: quiero que tom gane - - - - - - - - - -
+predicted: quiero que tom gane - - - - - - - - - -
+source: ill probably use it again    
+actual: probablemente lo voy a usar de nuevo - - - - - - -
+predicted: lo volvere solo - - - - - - - - - - -
+source: you need to be there    
+actual: necesitas estar ahi - - - - - - - - - - -
+predicted: tienes que estar ahi - - - - - - - - - -
+source: i found you      
+actual: ya te encontre - - - - - - - - - - -
+predicted: te encontre - - - - - - - - - - - -
+70
+0.263139231990148 0.5103180338512322 0.6406961201164779 0.7134039827711848
+0.15151515151515155 0.3892494720807615 0.5364762511356723 0.6238986072117501
+##################################################################################################
+model name  : model100_2.h5
+Model: "model_5"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_11 (InputLayer)           [(None, 9)]          0                                            
+__________________________________________________________________________________________________
+input_12 (InputLayer)           [(None, 14)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 9, 150)       1277550     input_11[0][0]                   
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 14, 150)      2406450     input_12[0][0]                   
+__________________________________________________________________________________________________
+lstm_10 (LSTM)                  [(None, 100), (None, 100400      embedding_en[0][0]               
+__________________________________________________________________________________________________
+lstm_11 (LSTM)                  (None, 14, 100)      100400      embedding_es[0][0]               
+                                                                 lstm_10[0][1]                    
+                                                                 lstm_10[0][2]                    
+__________________________________________________________________________________________________
+dense_5 (Dense)                 (None, 14, 16043)    1620343     lstm_11[0][0]                    
+==================================================================================================
+Total params: 5,505,143
+Trainable params: 5,505,143
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+source: i guessed right      
+actual: acerte - - - - - - - - - - - - -
+predicted: lo adivine correctamente - - - - - - - - - - -
+source: i think hes a great writer   
+actual: pienso que es un gran escritor - - - - - - - -
+predicted: creo que es un buen abogado - - - - - - - -
+source: choose the one you like    
+actual: elige el que te guste - - - - - - - - -
+predicted: elige cuando quieras - - - - - - - - - - -
+source: he knows how to tell lies   
+actual: el sabe decir mentiras - - - - - - - - - -
+predicted: el sabe como si - - - - - - - - - -
+source: he flew a kite     
+actual: el elevo un volantin - - - - - - - - - -
+predicted: el construyo un camion - - - - - - - - - -
+source: i want tom to win    
+actual: quiero que tom gane - - - - - - - - - -
+predicted: quiero que tom ganara - - - - - - - - - -
+source: ill probably use it again    
+actual: probablemente lo voy a usar de nuevo - - - - - - -
+predicted: probablemente necesite manana - - - - - - - - - - -
+source: you need to be there    
+actual: necesitas estar ahi - - - - - - - - - - -
+predicted: tienes que estar alli - - - - - - - - - -
+source: i found you      
+actual: ya te encontre - - - - - - - - - - -
+predicted: te encontre - - - - - - - - - - - -
+70
+0.2614367273361869 0.5085746697443524 0.6392210354120667 0.7121468148912449
+0.1388888888888889 0.37267799624996495 0.521291059062705 0.6104735835807844
+##################################################################################################
+model name  : model50_2.h5
+Model: "model_6"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_13 (InputLayer)           [(None, 9)]          0                                            
+__________________________________________________________________________________________________
+input_14 (InputLayer)           [(None, 14)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 9, 100)       851700      input_13[0][0]                   
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 14, 100)      1604300     input_14[0][0]                   
+__________________________________________________________________________________________________
+lstm_12 (LSTM)                  [(None, 50), (None,  30200       embedding_en[0][0]               
+__________________________________________________________________________________________________
+lstm_13 (LSTM)                  (None, 14, 50)       30200       embedding_es[0][0]               
+                                                                 lstm_12[0][1]                    
+                                                                 lstm_12[0][2]                    
+__________________________________________________________________________________________________
+dense_6 (Dense)                 (None, 14, 16043)    818193      lstm_13[0][0]                    
+==================================================================================================
+Total params: 3,334,593
+Trainable params: 878,593
+Non-trainable params: 2,456,000
+__________________________________________________________________________________________________
+None
+source: i guessed right      
+actual: acerte - - - - - - - - - - - - -
+predicted: me agarre un vistazo - - - - - - - - - -
+source: i think hes a great writer   
+actual: pienso que es un gran escritor - - - - - - - -
+predicted: creo que es una buena nadadora - - - - - - - -
+source: choose the one you like    
+actual: elige el que te guste - - - - - - - - -
+predicted: di a tom te llamo - - - - - - - - -
+source: he knows how to tell lies   
+actual: el sabe decir mentiras - - - - - - - - - -
+predicted: el sabe lo que le paso - - - - - - - -
+source: he flew a kite     
+actual: el elevo un volantin - - - - - - - - - -
+predicted: el jurado ha sido una maldicion - - - - - - - -
+source: i want tom to win    
+actual: quiero que tom gane - - - - - - - - - -
+predicted: quiero que tom - - - - - - - - - - -
+source: ill probably use it again    
+actual: probablemente lo voy a usar de nuevo - - - - - - -
+predicted: lo hare un trabajo por eso - - - - - - - -
+source: you need to be there    
+actual: necesitas estar ahi - - - - - - - - - - -
+predicted: necesitas estar alli - - - - - - - - - - -
+source: i found you      
+actual: ya te encontre - - - - - - - - - - -
+predicted: lo hare - - - - - - - - - - - -
+70
+0.24950677507770364 0.49687666342347875 0.6295011158915041 0.7039386122617124
+0.14285714285714285 0.3779644730092272 0.5261597794341889 0.6147881529512643
+##################################################################################################
+model name  : model300_0.h5
+Model: "model_1"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_3 (InputLayer)            [(None, 10)]         0                                            
+__________________________________________________________________________________________________
+input_4 (InputLayer)            [(None, 10)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 10, 100)      1082000     input_3[0][0]                    
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 10, 200)      4084200     input_4[0][0]                    
+__________________________________________________________________________________________________
+lstm_2 (LSTM)                   [(None, 300), (None, 481200      embedding_en[0][0]               
+__________________________________________________________________________________________________
+lstm_3 (LSTM)                   (None, 10, 300)      601200      embedding_es[0][0]               
+                                                                 lstm_2[0][1]                     
+                                                                 lstm_2[0][2]                     
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 10, 20421)    6146721     lstm_3[0][0]                     
+==================================================================================================
+Total params: 12,395,321
+Trainable params: 7,229,121
+Non-trainable params: 5,166,200
+__________________________________________________________________________________________________
+None
+actual: el clima se esta volviendo mas frio - - -
+predicted: - el tiempo se ha ido - - - - -
+actual: debemos mantener la calma - - - - - -
+predicted: - debemos mantener la calma - - - - - -
+actual: ella es taxista - - - - - - -
+predicted: - ella es un conductor de conductor - - - -
+actual: su llegada altero completamente nuestra vida - - - -
+predicted: - su libro parecia cambiar nuestro mal - - - -
+actual: no sabia donde tomar el micro - - - -
+predicted: - no sabia donde habia perdido el autobus - - -
+actual: la casa en que vivo no es muy grande -
+predicted: - la casa no es vivir en mi casa - -
+actual: cuando quieres que este de vuelta aqui - - -
+predicted: - cuando queres que vuelva aqui - - - - -
+actual: el comportamiento de tomas ha cambiado - - - -
+predicted: - el comportamiento de tom ha cambiado - - - -
+actual: por que lleva usted un sueter - - - -
+predicted: - por que llevas puesto un sueter - - - -
+0.3507732461941682 0.5752720673708484 0.6893749199053663 0.7524653067344427
+0.042553191489361694 0.20628424925175867 0.35281545857758606 0.45418525873453736
+##################################################################################################
+model name  : model300_1.h5
+Model: "model_3"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_7 (InputLayer)            [(None, 10)]         0                                            
+__________________________________________________________________________________________________
+input_8 (InputLayer)            [(None, 10)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 10, 100)      1082000     input_7[0][0]                    
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 10, 300)      6126300     input_8[0][0]                    
+__________________________________________________________________________________________________
+lstm_6 (LSTM)                   [(None, 300), (None, 481200      embedding_en[0][0]               
+__________________________________________________________________________________________________
+lstm_7 (LSTM)                   (None, 10, 300)      721200      embedding_es[0][0]               
+                                                                 lstm_6[0][1]                     
+                                                                 lstm_6[0][2]                     
+__________________________________________________________________________________________________
+dense_3 (Dense)                 (None, 10, 20421)    6146721     lstm_7[0][0]                     
+==================================================================================================
+Total params: 14,557,421
+Trainable params: 7,349,121
+Non-trainable params: 7,208,300
+__________________________________________________________________________________________________
+None
+actual: el clima se esta volviendo mas frio - - -
+predicted: - el aire acondicionado esta estropeado - - - - -
+actual: debemos mantener la calma - - - - - -
+predicted: - debemos acatar las cosas - - - - - -
+actual: ella es taxista - - - - - - -
+predicted: - ella es una reunion azul - - - - -
+actual: su llegada altero completamente nuestra vida - - - -
+predicted: - su gato es la clave - - - - -
+actual: no sabia donde tomar el micro - - - -
+predicted: - no sabia que hablaras frances - - - - -
+actual: la casa en que vivo no es muy grande -
+predicted: - la casa no esta en casa de mi - -
+actual: cuando quieres que este de vuelta aqui - - -
+predicted: - cuando quieres hacerlo - - - - - - -
+actual: el comportamiento de tomas ha cambiado - - - -
+predicted: - el frances de tom es excentrica - - - -
+actual: por que lleva usted un sueter - - - -
+predicted: - por que estas usando una foto - - - -
+0.3335201350496309 0.5669737200957117 0.6846632932834913 0.7493424697092
+0.0909090909090909 0.30151134457776363 0.453252714669103 0.5491004867761125
+##################################################################################################
+model name  : model300_2.h5
+Model: "model_3"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_7 (InputLayer)            [(None, 10)]         0                                            
+__________________________________________________________________________________________________
+input_8 (InputLayer)            [(None, 10)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 10, 100)      1082000     input_7[0][0]                    
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 10, 300)      6126300     input_8[0][0]                    
+__________________________________________________________________________________________________
+lstm_6 (LSTM)                   [(None, 300), (None, 481200      embedding_en[0][0]               
+__________________________________________________________________________________________________
+lstm_7 (LSTM)                   (None, 10, 300)      721200      embedding_es[0][0]               
+                                                                 lstm_6[0][1]                     
+                                                                 lstm_6[0][2]                     
+__________________________________________________________________________________________________
+dense_3 (Dense)                 (None, 10, 20421)    6146721     lstm_7[0][0]                     
+==================================================================================================
+Total params: 14,557,421
+Trainable params: 7,349,121
+Non-trainable params: 7,208,300
+__________________________________________________________________________________________________
+None
+actual: el clima se esta volviendo mas frio - - -
+predicted: - el aire acondicionado esta estropeado - - - - -
+actual: debemos mantener la calma - - - - - -
+predicted: - debemos obedecer las reglas - - - - - -
+actual: ella es taxista - - - - - - -
+predicted: - ella es una buena nadadora - - - - -
+actual: su llegada altero completamente nuestra vida - - - -
+predicted: - su gato se sento en la ciudad - - -
+actual: no sabia donde tomar el micro - - - -
+predicted: - no sabia que hablaras el vestido - - - -
+actual: la casa en que vivo no es muy grande -
+predicted: - la idea de ser rico no vive cerca - -
+actual: cuando quieres que este de vuelta aqui - - -
+predicted: - cuando quieres hacerlo - - - - - - -
+actual: el comportamiento de tomas ha cambiado - - - -
+predicted: - tom se habla espanol - - - - - -
+actual: por que lleva usted un sueter - - - -
+predicted: - por que estas usando un dibujo - - - -
+0.3327403350315808 0.5619932886459261 0.6792714566838493 0.7442774652966779
+0.06976744186046512 0.26413527189768715 0.4153415924784589 0.5139409225754329
+##################################################################################################
+
+##################################################################################################
+RESULTS ON CS224N DATA (GLOBAL ATTENTION MODEL-LUONG STYLE)
+Model: "model_2"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_5 (InputLayer)            [(None, 59)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 59, 100)      1769000     input_5[0][0]                    
+__________________________________________________________________________________________________
+input_6 (InputLayer)            [(None, 59)]         0                                            
+__________________________________________________________________________________________________
+bidirectional_2 (Bidirectional) (None, 59, 100)      60400       embedding_en[0][0]               
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 59, 100)      2443900     input_6[0][0]                    
+__________________________________________________________________________________________________
+lstm_9 (LSTM)                   [(None, 59, 100), (N 80400       bidirectional_2[0][0]            
+__________________________________________________________________________________________________
+lstm_10 (LSTM)                  (None, 59, 100)      80400       embedding_es[0][0]               
+                                                                 lstm_9[0][1]                     
+                                                                 lstm_9[0][2]                     
+__________________________________________________________________________________________________
+lstm_11 (LSTM)                  (None, 59, 100)      80400       lstm_10[0][0]                    
+__________________________________________________________________________________________________
+dot_4 (Dot)                     (None, 59, 59)       0           lstm_11[0][0]                    
+                                                                 lstm_9[0][0]                     
+__________________________________________________________________________________________________
+attention (Activation)          (None, 59, 59)       0           dot_4[0][0]                      
+__________________________________________________________________________________________________
+dot_5 (Dot)                     (None, 59, 100)      0           attention[0][0]                  
+                                                                 lstm_9[0][0]                     
+__________________________________________________________________________________________________
+concatenate_2 (Concatenate)     (None, 59, 200)      0           dot_5[0][0]                      
+                                                                 lstm_11[0][0]                    
+__________________________________________________________________________________________________
+time_distributed_4 (TimeDistrib (None, 59, 200)      40200       concatenate_2[0][0]              
+__________________________________________________________________________________________________
+time_distributed_5 (TimeDistrib (None, 59, 24438)    4912038     time_distributed_4[0][0]         
+==================================================================================================
+Total params: 9,466,738
+Trainable params: 9,466,738
+Non-trainable params: 0
+
+source: one for animals including domestic animals and i have to say i learned everything i know about animal behavior even before i got to gombe and the chimps from my dog rusty who was my childhood companion                      
+actual: uno para animales incluyendo animales domsticos y debo decir aprend todo lo que s sobre comportamiento animal an antes de ir a gombe y los chimpancs de mi perro rusty que fue mi compaero de la infancia - - - - - - - - - - - - - - - - - - - - - -
+predicted: uno por los animales en animales y tengo que decir que tengo que decir todo el comportamiento de dlares ya que tengo que hablar con ustedes y los chimpancs de mi perro y los chimpancs de mi perro y que los chimpancs de mi perro - - - - - - - - - - - - - -
+source: and i have a kind of hollywood ending to my talk this afternoon which goes a little bit like this a few months ago i was getting ready to go on another book tour and i had my bags packed                   
+actual: y tengo una especie de final de hollywood para mi charla de esta tarde que dice ms o menos as hace unos meses me estaba preparando para iniciar otra gira de mi libro y tena mis valijas empacadas - - - - - - - - - - - - - - - - - - - - -
+predicted: y tengo un tipo de hollywood que me asombra mi charla que l haba un poco como esta semana que haba dejado para ir a mi libro a otro libro en otro libro en otro libro de revisin de mis hojas - - - - - - - - - - - - - - - - - -
+source: and so you wouldnt sit that close to another person because of your notion that its you versus the universe thats all buddha discovered                                   
+actual: as que no se sentaran as de cerca de otra persona debido a la nocin de que se trata de ustedes contra el universo eso es todo lo que el buda descubri - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: as que no te sientas y analizas otra persona porque de tu concepto que es todo el universo es todo el universo eso es todo el universo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: and indeed this kind of verbiage is not the exception but the rule                                              
+actual: este tipo de expresiones no son la excepcin sino la regla - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y de hecho este tipo de pregnancia no es la excepcin pero la regla - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: so we know how to do this in many of the ways that are up there                                           
+actual: nosotros sabemos cmo hacer esto en varias de las maneras indicadas ah - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: as que sabemos cmo en muchos de las formas que estn ah - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: because what happened in the beginning this stuff encases itself in a cell then cells start hanging out together in societies                                      
+actual: porque lo que ocurri al principio esta cosa se encierra a si misma en una celula y luego las celulas empiezan a agruparse en sociedades - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: porque lo que sucedi en el principio de la banda esta pequea empieza a una clula luego las clulas se muestren en sociedades - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: we respond so well to form                                                     
+actual: respondemos muy bien a la forma - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: creemos que tambin para la forma de hacer - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: youre done and you celebrate                                                      
+actual: lo lograron y lo celebran - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: se hacen y se montan y refrescando - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: i would say no thats an elephant                                                    
+actual: y yo no es un elefante - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: dira que no es una pila - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+50
+0.09683042866738079 0.3102391322665357 0.4615464835856217 0.5565547214943115
+0.06504065040650409 0.25503068522533534 0.4058364112560056 0.5050056289046048
+##################################################################################################
+Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_1 (InputLayer)            [(None, 59)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 59, 50)       884500      input_1[0][0]                    
+__________________________________________________________________________________________________
+input_2 (InputLayer)            [(None, 59)]         0                                            
+__________________________________________________________________________________________________
+bidirectional (Bidirectional)   (None, 59, 100)      40400       embedding_en[0][0]               
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 59, 50)       1221950     input_2[0][0]                    
+__________________________________________________________________________________________________
+lstm_1 (LSTM)                   [(None, 59, 100), (N 80400       bidirectional[0][0]              
+__________________________________________________________________________________________________
+lstm_2 (LSTM)                   (None, 59, 100)      60400       embedding_es[0][0]               
+                                                                 lstm_1[0][1]                     
+                                                                 lstm_1[0][2]                     
+__________________________________________________________________________________________________
+lstm_3 (LSTM)                   (None, 59, 100)      80400       lstm_2[0][0]                     
+__________________________________________________________________________________________________
+dot (Dot)                       (None, 59, 59)       0           lstm_3[0][0]                     
+                                                                 lstm_1[0][0]                     
+__________________________________________________________________________________________________
+attention (Activation)          (None, 59, 59)       0           dot[0][0]                        
+__________________________________________________________________________________________________
+dot_1 (Dot)                     (None, 59, 100)      0           attention[0][0]                  
+                                                                 lstm_1[0][0]                     
+__________________________________________________________________________________________________
+concatenate (Concatenate)       (None, 59, 200)      0           dot_1[0][0]                      
+                                                                 lstm_3[0][0]                     
+__________________________________________________________________________________________________
+time_distributed (TimeDistribut (None, 59, 200)      40200       concatenate[0][0]                
+__________________________________________________________________________________________________
+time_distributed_1 (TimeDistrib (None, 59, 24438)    4912038     time_distributed[0][0]           
+==================================================================================================
+Total params: 7,320,288
+Trainable params: 7,320,288
+Non-trainable params: 0
+
+source: and i supposed that that was just a flat truth always true                                               
+actual: y supuse que era una verdad slida constante - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y yo aprend que esa forma de la verdad siempre siempre cambi cierto - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: but this is what we would like to see isnt it                                                
+actual: pero esto es lo que quisiramos ver verdad - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: pero esto es lo que nos gustara ver no es - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: and they had this vision of the nurse kind of clicking away on this aluminum device and it all being incredibly sort of gadgetlustish                                   
+actual: y tenan esta visin de la enfermera de cierta manera haciendo clic en un dispositivo de aluminio y todo esto siendo increblemente moderno y lujoso - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y ellos tenan esta visin de la perspectiva de la perspectiva de la perspectiva de la perspectiva de este dispositivo y todo el tipo de vista de funcionalidades - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: we now have sites                                                       
+actual: ahora tenemos sitios web - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: ahora tenemos que cambiar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: so this is all done in the last two years                                                 
+actual: esto es todo lo que se ha hecho en los ltimos dos aos - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: as que esto es todo el ltimo dos dos aos - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: a marble statue could wave its hand at us the atoms that make up its crystalline structure are all vibrating back and forth anyway                                   
+actual: una estatua de mrmol puede agitar su mano saludando sus tomos su estructura cristalina estn vibrando de todas maneras - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: un individuo para el pblico podra ser el plan de los tomos que hacen el plan de estructura que estn empezando a trabajar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: now theres a history of this in science and before i tell you what it is im going to tell you a bit about the history of it in science                             
+actual: hay una historia al respecto en la ciencia y antes que te diga cual es te voy a contar un poco al respecto de la historia de ello en la ciencia - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: ahora hay una historia de esta ciencia y antes de que voy a decirles qu es lo que voy a decirles una historia de la historia - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: my lower half is appearing at a different conference in a different country                                              
+actual: mi mitad inferior est en una conferencia diferente en un pas diferente - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: mi mitad del medio est asociada en una conferencia en una conferencia en una conferencia diferente - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+source: we went to brazil we went to china and to india to bentonville arkansas to washington dc and to sacramento                                       
+actual: fuimos a brasil fuimos a china y a india fuimos a bentonville arkansas y a washington dc y a sacramento - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: fuimos a brasil fuimos a china y para india para reforzar a washington para dar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+50
+0.09753068844024877 0.3113987697241951 0.46270429427073184 0.5576217094049367
+0.06521739130434781 0.25537695922762454 0.40620000985235166 0.5053483543335474
+##################################################################################################
+Model: "model_3"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_7 (InputLayer)            [(None, 59)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 59, 100)      2820300     input_7[0][0]                    
+__________________________________________________________________________________________________
+input_8 (InputLayer)            [(None, 59)]         0                                            
+__________________________________________________________________________________________________
+bidirectional_3 (Bidirectional) (None, 59, 100)      60400       embedding_en[0][0]               
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 59, 100)      3991000     input_8[0][0]                    
+__________________________________________________________________________________________________
+lstm_13 (LSTM)                  [(None, 59, 100), (N 80400       bidirectional_3[0][0]            
+__________________________________________________________________________________________________
+lstm_14 (LSTM)                  (None, 59, 100)      80400       embedding_es[0][0]               
+                                                                 lstm_13[0][1]                    
+                                                                 lstm_13[0][2]                    
+__________________________________________________________________________________________________
+lstm_15 (LSTM)                  (None, 59, 100)      80400       lstm_14[0][0]                    
+__________________________________________________________________________________________________
+dot_6 (Dot)                     (None, 59, 59)       0           lstm_15[0][0]                    
+                                                                 lstm_13[0][0]                    
+__________________________________________________________________________________________________
+attention (Activation)          (None, 59, 59)       0           dot_6[0][0]                      
+__________________________________________________________________________________________________
+dot_7 (Dot)                     (None, 59, 100)      0           attention[0][0]                  
+                                                                 lstm_13[0][0]                    
+__________________________________________________________________________________________________
+concatenate_3 (Concatenate)     (None, 59, 200)      0           dot_7[0][0]                      
+                                                                 lstm_15[0][0]                    
+__________________________________________________________________________________________________
+time_distributed_6 (TimeDistrib (None, 59, 200)      40200       concatenate_3[0][0]              
+__________________________________________________________________________________________________
+time_distributed_7 (TimeDistrib (None, 59, 39909)    8021709     time_distributed_6[0][0]         
+==================================================================================================
+Total params: 15,174,809
+Trainable params: 15,174,809
+Non-trainable params: 0
+
+MORE DATA did improve the translations:
+1
+source: it was impossible so they decided there was no therapy there was no treatment but there was one treatment which actually had been pioneered at the hartford hospital in the early and you can imagine what it was it was prefrontal lobotomy                 
+actual: era imposible as que decidieron que no haba terapia no haba tratamiento pero haba un tratamiento en la que el hospital hartford a comienzo de los haba sido pionero y se pueden imaginar qu era era la lobotoma prefrontal - - - - - - - - - - - - - - - - - - - -
+predicted: era imposible no haba previsto ni siquieran no haba tratamiento ni siquiera haba sido lavado en el hospital de la revista previa en los primeros y puedes imaginarse que era la cura britnica - - - - - - - - - - - - - - - - - - - - - - - - - -
+2
+source: from far this line looks very smooth like that                                                  
+actual: desde lejos esta linea se ve muy fluida asi - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: desde todo esto parece muy amable como eso - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+3
+source: first i went to mit the ai lab was there and i said well i want to build intelligent machines too but the way i want to do it is to study how brains work first                       
+actual: primero fu a mit el laboratorio de inteligencia artificial estaba ah y dije bueno tambin quiero crear mquinas inteligentes pero la manera que quiero hacerlo es estudiando cmo funciona el cerebro - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: primero fui al mit el laboratorio basico all y dije bueno quiero construir mquinas inteligentes pero la forma en que quiero hacer que la votacin es estudiar cmo programar cmo los robots importan - - - - - - - - - - - - - - - - - - - - - - - - - -
+4
+source: its a process that takes rationality almost to an absurd level and it transcends all the baggage that normally comes with what people would call sort of a rational conclusion to something                           
+actual: es un proceso que lleva la racionalidad a un nivel casi absurdo y trasciende la carga adicional que normalmente viene con lo que la gente llamara una conclusin racional de algo - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: es un proceso que toma no tan pronto a un nivel automtico y resume todo el rin que normalmente se llamara con una conclusin fsica de algo que se llama una leccin de una discusin tremenda para algo - - - - - - - - - - - - - - - - - - - - -
+5
+source: and once you get increased antibiotic resistance the antibiotics arent knocking out the harmful strains anymore                                           
+actual: y una vez que tenemos una mayor resistencia a los antibiticos los antibiticos dejan de ser capaces de enfrentar a las cepas nocivas - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y una vez que se duplica la resistencia a antibiticos los antibiticos no son estudiados - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+6
+source: he never submitted to jealousy or brooded over perceived slights                                                 
+actual: nunca se dej caer en la envidia o se obsesion con desaires percibidos - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: nunca se acab a graduarme o desmotivada ms realista de realista - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+7
+source: so maybe me starting to take pictures was some kind of way to bring both sides of my family together a way to take the worlds with me a way to tell stories visually                         
+actual: as que para m tal vez tomar fotos fue una manera de unir ambos lados de mi familia una manera de llevar los mundos conmigo de contar historias visualmente - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: as que tal vez empecemos a tomar fotos era algn tipo de forma que coloqu dos lados de mi familia en la misma forma que tomen el mundo con m un camino para decirle a historias visual - - - - - - - - - - - - - - - - - - - - - -
+8
+source: and if you believe that then stuff like this doesnt bother you this is all the negatives add up to making the online experience not worth the trouble                               
+actual: y si creen ello entonces este tipo de cosas no les molesta esto es todos los negativos se suman resultando en que la experiencia online que no vale la pena - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y si creen que esto es esto que esto no crees que todo esto es lo negativo se extinguen la propia experiencia en la lnea de la experiencia no vale el problema - - - - - - - - - - - - - - - - - - - - - - - - - - -
+9
+source: and now because im actually the one here i can if i want to get out of the ufo and walk up and they should be worshipping me at this point as a god                         
+actual: y ahora como soy el elegido puedo salir del ovni y aparecer y deberan adorarme como un dios - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y ahora porque yo soy el uno aqu puedo llegar a la punta de la punta y caminar y deberan estar ah me va a estar en este punto como dios - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+0.09877889799622515 0.3132389034131884 0.46445000985004453 0.5591888170704977
+0.048 0.21908902300206645 0.36712132179262946 0.46806946386414316
+
+
+THE SAME ABOVE MODEL with 100k samples and n_units and embedding_dim = 150 results were really good
+
+1
+source: what do you actually do about that in a difficult circumstance                                                
+actual: qu hacer en una situacin difcil como esta - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: qu haces en realidad en una circunstancia difcil - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2
+source: they didnt have to take the trip we took                                                  
+actual: no tuvieron que recorrer el camino de un siglo que recorrimos nosotros - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: no tenan que tomar el viaje que tomamos - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+3
+source: now instead of crude tools made of sticks and stones israel now had iron plows and sickles and hoes and military weapons                                     
+actual: ahora en lugar de toscas herramientas hechas de palos y piedras israel ahora tena arados de hierro hoces y azadones y armas militares - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: en lugar de una herramienta de ingeniera hecha de palos y piedras israel haba comprado en el hierro y los moretones y de los militares de gallinas - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+4
+source: but its not only that                                                      
+actual: pero no solamente eso - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: pero no slo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+5
+source: the lower graph is with twice the amount of and percent less sunlight and youre back to the original climate                                       
+actual: el grfico inferior est obtenido para el doble de y un menos de luz solar y as se regresa al clima original - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: el grfico inferior es con el doble de dos veces la cantidad de ms y menos medio solar y estn en la parte original - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+6
+source: so i have a particular imaginative approach to visual work                                                 
+actual: as que tengo un enfoque particular e imaginativo del trabajo visual - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: tengo una aproximacin particular para trabajar en trabajo visual - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+7
+source: put that in play                                                       
+actual: pongan eso en prctica - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: poner eso en juego - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+8
+source: and it creates a kind of stickiness between the community and the company which is really really powerful                                         
+actual: y esto genera un tipo de pregnancia entre la comunidad y la compaa que realmente es muy poderosa - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y se crea un tipo de quiebre entre la comunidad y la compaa que es realmente poderosa - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+9
+source: and so with that coming to a coming to an operating theater near you soon i believe                                          
+actual: y estar pronto estar pronto llegando a la sala operatoria de su barrio creo yo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y as con eso se llega a un teatro operativo pronto me imagino - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+125
+0.09890886639843648 0.31336601970359584 0.4645361967496233 0.5592488295581616
+0.03816793893129771 0.19536616629114087 0.34037728815653356 0.44200245054879606
+##################################################################################################
+BEST MODEL UP UNTIL NOW
+Last attempt at model tweaking ,set n_units and embed_dim to 256	
+Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_1 (InputLayer)            [(None, 59)]         0                                            
+__________________________________________________________________________________________________
+embedding_en (Embedding)        (None, 59, 256)      10108416    input_1[0][0]                    
+__________________________________________________________________________________________________
+input_2 (InputLayer)            [(None, 59)]         0                                            
+__________________________________________________________________________________________________
+bidirectional (Bidirectional)   (None, 59, 256)      394240      embedding_en[0][0]               
+__________________________________________________________________________________________________
+embedding_es (Embedding)        (None, 59, 256)      14361344    input_2[0][0]                    
+__________________________________________________________________________________________________
+lstm_1 (LSTM)                   [(None, 59, 256), (N 525312      bidirectional[0][0]              
+__________________________________________________________________________________________________
+lstm_2 (LSTM)                   (None, 59, 256)      525312      embedding_es[0][0]               
+                                                                 lstm_1[0][1]                     
+                                                                 lstm_1[0][2]                     
+__________________________________________________________________________________________________
+lstm_3 (LSTM)                   (None, 59, 256)      525312      lstm_2[0][0]                     
+__________________________________________________________________________________________________
+dot (Dot)                       (None, 59, 59)       0           lstm_3[0][0]                     
+                                                                 lstm_1[0][0]                     
+__________________________________________________________________________________________________
+attention (Activation)          (None, 59, 59)       0           dot[0][0]                        
+__________________________________________________________________________________________________
+dot_1 (Dot)                     (None, 59, 256)      0           attention[0][0]                  
+                                                                 lstm_1[0][0]                     
+__________________________________________________________________________________________________
+concatenate (Concatenate)       (None, 59, 512)      0           dot_1[0][0]                      
+                                                                 lstm_3[0][0]                     
+__________________________________________________________________________________________________
+time_distributed (TimeDistribut (None, 59, 512)      262656      concatenate[0][0]                
+__________________________________________________________________________________________________
+time_distributed_1 (TimeDistrib (None, 59, 56098)    28778274    time_distributed[0][0]           
+==================================================================================================
+Total params: 55,480,866
+Trainable params: 55,480,866
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+1
+source: but whats happened is our technology has removed the checks and balances on our population growth                                           
+actual: pero lo que ha ocurrido es que nuestra tecnologa ha quitado los controles y equilibrios en el crecimiento popular - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: pero lo que ha pasado es nuestra tecnologa se ha quitado la carga y la lucha en nuestro crecimiento de la poblacin - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2
+source: you know hes thinking what am i getting myself into                                                 
+actual: ustedes sabenl estaba pensando en qu me estoy involuncrando - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: saben l es pensar qu estoy haciendo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+3
+source: and that was something that i went through you know and im still going through                                            
+actual: y que fue algo por lo que pas saben y que an lo estoy pasando - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: y eso fue algo que fui a travs de ustedes saben y yo sigo adelante - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+4
+source: the president needs to stand up and say at the end of a healthcare reform debate our goal as a country is to move percent of care out of institutions clinics hospitals and nursing homes to the home in years                   
+actual: el presidente debe alzarse y decir al final del debate sobre la reforma de salud nuestro objetivo como pas es trasladar el de la asistencia de las instituciones clnicas hospitales y residencias a los hogares en aos - - - - - - - - - - - - - - - - - - - - - -
+predicted: el presidente necesita ser acudir y decir en el final de una reforma de salud de la salud el debate como el objetivo es mover el por ciento de la creacin de las clulas de las clulas de las clulas de las clulas de la casa - - - - - - - - - - - - -
+5
+source: you can say the small cookie has godiva chocolate bits in it but it doesnt work they want the big cookie                                      
+actual: puedes decirles que la galleta pequea tiene trozos de chocolate godiva pero eso no funciona ellos quieren la galleta grande - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: pueden decir que la pequea galleta de la mujer ha sido enfriado el chocolate pero no funciona quieren que las grandes compaas - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+6
+source: im not going to talk about the skeptical environmentalist probably thats also a good choice                                            
+actual: no les voy a hablar del ambientalista escptico probablemente tambin un buen tema - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: no voy a hablar de la bestialidad macro de los romanos probablemente es una buena eleccin - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+7
+source: its actually where it all started for me                                                   
+actual: de hecho es donde todo empez para m - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: es por eso todos empezamos por m - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+8
+source: that little guy is frisky now youve seen video like this on tv a lot and its very intimidating and i think it gives the wrong impression about sharks                              
+actual: ese chico est un poco juguetn ahora han visto muchos videos como este en la tv y es intimidante y creo que da una impresin equivocada acerca de los tiburones - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: ese pequeo tipo est de pie ahora mismo que has visto video como esta de la tv mucho y es muy intimidante y creo que le da la impresin equivocada sobre la calle - - - - - - - - - - - - - - - - - - - - - - - - - -
+9
+source: so oh theres another shot of my beard                                                   
+actual: entonces oh ah hay otra foto de mi barba - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+predicted: oh hay otra toma de furby - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+125
+0.10102270027384012 0.31689516438034254 0.46801170802169006 0.562419435201387
+0.01680672268907563 0.12964074471043288 0.25966259996470964 0.360056585428503

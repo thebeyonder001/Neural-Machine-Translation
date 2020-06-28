@@ -1,0 +1,27 @@
+TRAIN : 
+
+src=[would that have made it better], target=[eso se hubiera hecho mejor], predicted=[eso mejor haber hecho]
+src=[she got up to answer the phone], target=[ella se levanto para contestar al telefono], predicted=[ella le a a telefono telefono]
+src=[dont leave the light on], target=[no dejes la luz encendida], predicted=[no dejes abiertas luz encendida]
+src=[it is no use crying over spilt milk], target=[no tiene caso llorar sobre leche derramada], predicted=[no no no de en en derramada derramada]
+src=[tom is really good at math], target=[tom es realmente bueno en matematicas], predicted=[tom es bueno bueno de matematicas matematicas]
+src=[tom has his own room], target=[tom tiene su propio dormitorio], predicted=[tom tiene ordenando cuarto dormitorio]
+src=[why didnt you stay with tom], target=[por que no te quedaste con tom], predicted=[por que no a a a tom]
+src=[tom insisted on helping mary], target=[tom insistio en ayudar a mary], predicted=[tom insistio pedirle con mary]
+src=[have you ever ridden a bicycle], target=[alguna vez te has subido a una bicicleta], predicted=[has vez has vez vez vez habitacion]
+src=[tom seems to be as fit as a fiddle], target=[tom parece estar tan fino como un violin afinado], predicted=[tom parece que que fino fierro escritor]
+0.4977703502125119 0.3387268006641949 0.3479552987533751 0.42412950757348283
+
+TEST : 
+
+src=[could i have a piece of cheesecake], target=[me podrian dar un trozo de tarta de queso], predicted=[podrian podrian un pedazo pedazo de de]
+src=[he finally decided to get married], target=[finalmente decidio casarse], predicted=[el se a a]
+src=[that was magic], target=[eso fue magia], predicted=[eso es magico]
+src=[is that too much to ask for], target=[es mucho pedir], predicted=[eso es demasiado pena para]
+src=[go straight along this street], target=[siga derecho por esta calle], predicted=[vete recto en la]
+src=[i wonder if tom will be at marys party], target=[me pregunto si tom ira a la fiesta de mary], predicted=[me pregunto a tom tom que a a la]
+src=[you have three pens], target=[tienes tres lapices], predicted=[tienes tres]
+src=[they are in the teachers room], target=[ellos estan en la sala de profesores], predicted=[ellos estan en el pieza]
+src=[i dont intend do that], target=[no trato de hacerlo], predicted=[no no hacer eso]
+src=[i wonder if anything happened to him], target=[me pregunto si le paso algo], predicted=[me pregunto si no no]
+0.3470261534415816 0.38012575396546167 0.4302205843680496 0.5013405410272603
