@@ -46,7 +46,7 @@ We tweaked with the original encoder-decoder structure by concatenating the enco
 ##  Our pre-trained Models to check out the results:
 To checkout our results or use our model as a pre-trained model , maintain the data consistency by using the cs224n assignment data files from here - https://drive.google.com/drive/folders/1iKU3rcOR-wpr6ucGo7g2_4Xb0pPhnTmZ?usp=sharing 
 
-1. Model seq2seq (with attention)-[seq2seq model](https://drive.google.com/file/d/1-6MRmaS9JAPZ4NToToQXQUXVdSNf_HHI/view?usp=sharing)
+1. Model seq2seq (with attention)-[seq2seq model](https://drive.google.com/file/d/1hcYjF9Q1fozfJUi48ydYRJ-LgEp3aQ4Q/view?usp=sharing)
   To use the above model however you would need to maintain the same set of vocabulary so run the [seq2seq notebook](https://github.com/thebeyonder001/Neural-Machine-Translation/blob/master/nmt_seq2seq.ipynb) as it is (i.e. 100k samples,39486 english vocab and 56098 spanish vocab on cs224ndata)
 
 2. Model seq2seq1 - Use the [seq2seq1 notebook](https://github.com/thebeyonder001/Neural-Machine-Translation/blob/master/nmt_seq2seq1.ipynb)
